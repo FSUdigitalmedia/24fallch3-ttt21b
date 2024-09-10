@@ -10,6 +10,12 @@ let x2Speed = 3;  // speed in X direction
 let y2Speed = 10; // speed in Y direction
 let d2 = 150;      // diameter of the ball
 
+let x3 = 100;
+let y3 = 0;
+let x3Speed = 3;
+let y3Speed = 12;
+let d3 = 200;
+
 
 function setup() {
   createCanvas(1920, 991); //fullscreen in a chrome tab
@@ -27,13 +33,13 @@ function draw() {
   }
   rect(0, 0, 1920, 991); //changes color of the background with mouse click
 }
-{if (keyIsPressed == true) {  // If the key is pressed,
-  line(20, 20, 80, 80);      // draw a line;
+{if ((keyIsPressed == true) && (key == 't') || (key == 'i') || (key == 'e') || (key == 'n')){  // If the key is pressed,
+  fill(1,200,0);      // reacts if i type my name in lowercase
 }
-else {                       // Otherwise,
-  rect(40, 40, 20, 20);      // draw a rectangle.
+else {                       // idk what else to do for the else
 }
 }
+ellipse(x3,y3,d3);
   
 
   fill(113, 218, 150)// changes color of circle1
@@ -68,6 +74,20 @@ fill(0,0,200) //changes color of circle2
   y2 = y2 + y2Speed;
 
   ellipse(x2, y2, d2);
+
+   //changes color of circle3
+
+
+  if (x3 > width || x3 < 0) {
+    x3Speed = x3Speed * -1;  
+  }
+  x3 = x3 + x3Speed; 
+  if (y3 > height || y3 < 0) {
+    y3Speed = y3Speed * -1;  
+  }
+  y3 = y3 + y3Speed;
+
+
  
 
 
