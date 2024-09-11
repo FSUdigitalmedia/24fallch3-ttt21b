@@ -16,6 +16,7 @@ let x3Speed = 3;
 let y3Speed = 12;
 let d3 = 200;
 
+//can simplify most of this; make your own function 
 
 function setup() {
   createCanvas(1920, 991); //fullscreen in a chrome tab
