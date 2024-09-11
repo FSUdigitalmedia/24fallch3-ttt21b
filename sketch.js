@@ -33,6 +33,9 @@ function draw() {
   }
   rect(0, 0, 1920, 991); //changes color of the background with mouse click
 }
+
+// fix keyIsPressed, thats a variable, use keyPressed() instead
+// use keypressed outside of draw
 {if ((keyIsPressed == true) && (key == 't') || (key == 'i') || (key == 'e') || (key == 'n')){  // If the key is pressed,
   fill(1,200,0);      // reacts if i type my name in lowercase
 }
